@@ -421,15 +421,15 @@
                     </div>
                     
                     <div class="interactive-box">
-    <div class="interactive-title"><i class="fas fa-gamepad"></i> Actividad interactiva: Identifica el "snozzcumber"</div>
-    <p>¿Cuál de estos términos te parece más ajeno o confuso?</p>
-    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px;">
-        <span class="btn" onclick="showTermInfo('Termodinámica', 'La termodinámica estudia la energía en las transformaciones químicas. Viene de \"thermo\" (calor) y \"dynamics\" (fuerza).')">Termodinámica</span>
-        <span class="btn" onclick="showTermInfo('Estereoquímica', 'La estereoquímica estudia la disposición espacial de los átomos en las moléculas. Viene de \"stereos\" (espacio) y química.')">Estereoquímica</span>
-        <span class="btn" onclick="showTermInfo('Catálisis', 'La catálisis es el aumento de la velocidad de una reacción química por un catalizador. Viene de \"katalysis\" (disolución).')">Catálisis</span>
-    </div>
-    <div id="term-info" style="margin-top: 15px; padding: 15px; background: white; border-radius: 5px; display: none;"></div>
-</div>
+                        <div class="interactive-title"><i class="fas fa-gamepad"></i> Actividad interactiva: Identifica el "snozzcumber"</div>
+                        <p>¿Cuál de estos términos te parece más ajeno o confuso?</p>
+                        <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px;">
+                        <span class="btn" onclick="showTermInfo('Termodinámica', 'La termodinámica estudia la energía en las transformaciones químicas. Viene de \"thermo\" (calor) y \"dynamics\" (fuerza).')">Termodinámica</span>
+                        <span class="btn" onclick="showTermInfo('Estereoquímica', 'La estereoquímica estudia la disposición espacial de los átomos en las moléculas. Viene de \"stereos\" (espacio) y química.')">Estereoquímica</span>
+                        <span class="btn" onclick="showTermInfo('Catálisis', 'La catálisis es el aumento de la velocidad de una reacción química por un catalizador. Viene de \"katalysis\" (disolución).')">Catálisis</span>
+                        </div>
+                    <div id="term-info" style="margin-top: 15px; padding: 15px; background: white; border-radius: 5px; display: none;"></div>
+                    </div>
                 </div>
                 
                 <!-- Sección del Problema Raíz -->
@@ -977,5 +977,8 @@
             console.log("Mapa mental interactivo cargado. Navega por los nodos para explorar el contenido.");
         });
     </script>
+    function showTermInfo(term, description) {
+    alert(term + ":\n\n" + description);
+    }
 </body>
 </html>
