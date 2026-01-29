@@ -976,9 +976,16 @@
         window.addEventListener('DOMContentLoaded', () => {
             console.log("Mapa mental interactivo cargado. Navega por los nodos para explorar el contenido.");
         });
+        // Función para mostrar información de términos
         function showTermInfo(term, description) {
-            alert(term + ":\n\n" + description);
-        }   
+            const container = document.getElementById('term-info');
+            container.innerHTML = `
+                <h4 style="color: var(--secondary); margin-bottom: 10px;">${term}</h4>
+                <p>${description}</p>
+            `;
+            container.style.display = 'block';
+        }
+        
     </script>
 </body>
 </html>
